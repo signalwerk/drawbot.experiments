@@ -1,4 +1,3 @@
-/typo-bubbles/rendering/*.mp4
-/gradient/rendering/*.mp4
+/src/typo-bubbles/rendering/*.mp4
+/src/gradient/rendering/*.mp4
 /__DOC
-/fonts

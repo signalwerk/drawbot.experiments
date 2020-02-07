@@ -11,7 +11,7 @@ Animation of TypoBubbles. This Animation needs to have the Font [WorkSans-Regula
 * End of life (pop) is in the upper part
 * Bubbles «shake» in a sinus → smaller quicker, bigger slower
 
-![example](./typo-bubbles/doc/typo-bubbles.png)
+![example](./src/typo-bubbles/doc/typo-bubbles.png)
 
 
 ## Gradient
@@ -21,7 +21,7 @@ Animation of a «Random Gradient».
 * Time and resolution independant code
 * Config and Helpers in a separate File
 
-![example](./gradient/doc/gradient.png)
+![example](./src/gradient/doc/gradient.png)
 
 
 ### Mentors

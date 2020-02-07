@@ -4,15 +4,15 @@ debug = False
 
 
 # basic setup
-# scaler = 420;
-scaler = 1000;
+scaler = 1920;
+fps = 24
 seconds = 7
+
+# some magic numbers to config the style
 speedFactor = 10
 elementFactor = 20
 
 
-
-fps = 24
 
 widht = scaler;
 heightFactor = 1 / 16 * 9
@@ -20,11 +20,9 @@ height = round(scaler * heightFactor);
 elementMaxAge = (1 / speedFactor) * 15 / seconds
 
 
-
 # overwrite for debug
 if (debug):
     fps = 1
-
 
 
 # element setup

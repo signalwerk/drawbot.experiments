@@ -1,8 +1,9 @@
 import config as conf
 from random import choice
 import drawBot
-
 from imp import reload
+
+# don't cache config
 reload (conf)
 
 
@@ -16,7 +17,7 @@ possibleColors = [
 
 
 class Block:
-    """A simple example class"""
+    """each element"""
 
     age = 0
     maxAge = 0
@@ -27,15 +28,16 @@ class Block:
     y = 0
 
     def __init__(self):
-        # self.size = 0.01 + 0.1 * random() #* random()
         self.color = choice(possibleColors)
 
+    # lifetime tick
     def tick(self, t):
         self.age = self.age + t
         if (self.age >= 0 and self.age < self.maxAge) :
             self.x = self.x + self.speed[0] * t
             self.y = self.y + self.speed[1] * t
 
+    # draw state on stage
     def draw(self, widht, height):
         if (self.age >= 0 and self.age < self.maxAge) :
             drawBot.stroke(self.color[0]/255,self.color[1]/255,self.color[2]/255);

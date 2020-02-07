@@ -15,8 +15,8 @@ def nowStr():
 def sinOffset(t, max):
     return math.sin(math.tau * 1 / max * t)
 
-# seutp animatinon 1000px@24 fps
-scaler = 1000;
+# seutp animatinon 1920px@24 fps
+scaler = 1920;
 fps = 24
 
 # how many bubbles
@@ -34,6 +34,7 @@ animLength = 18 * fps
 
 # fontSize
 fSize = s(0.1)
+fontName = "WorkSans-Regular_Black"
 
 # canvas setup
 widht = s(1);
@@ -45,7 +46,6 @@ possibleTexts = ["t", "y", "p", "o", "*", ",", ")", "_", ".", "t", "y", "p", "o"
 
 # bubble class
 class Bubble:
-    """Bubble as a class"""
     size = 1
     speed = [0, 0]
     age = 0
@@ -79,7 +79,7 @@ class Bubble:
                     currentFontsize = fSize / self.maxAge * self.age * self.size
                     sinOffsetX = sinOffset(self.age, self.maxAge / self.frequency) * self.speed[0]
 
-                    font("AkzidenzGroteskPro-Super")
+                    font(fontName)
                     fontSize(currentFontsize)
 
                     textBox(self.text, (0 - fSize + sinOffsetX, self.y - fSize / 2, fSize * 2, fSize), align="center")
