@@ -13,6 +13,8 @@ Animation of TypoBubbles. This Animation needs to have the Font [WorkSans-Regula
 
 ![example](./src/typo-bubbles/doc/typo-bubbles.png)
 
+[See Video](https://cdn.jsdelivr.net/gh/signalwerk/drawbot.experiments@master/src/typo-bubbles/doc/typo-bubbles.mp4)
+
 
 ## Gradient
 Animation of a «Random Gradient».
@@ -22,6 +24,8 @@ Animation of a «Random Gradient».
 * Config and Helpers in a separate File
 
 ![example](./src/gradient/doc/gradient.png)
+
+[See Video](https://cdn.jsdelivr.net/gh/signalwerk/drawbot.experiments@master/src/gradient/doc/gradient.mp4)
 
 
 ### Mentors
